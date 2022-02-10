@@ -9,20 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
     <title>Chat Socket.io</title>
 </head>
 
 <body>
 
 
-    <div id="chat-container">
-        <div id="chat-window">
-            <div id="output"></div>
-            <div id="actions"></div>
+    <div id="chat-container" class="with-title">
+        <div id="chat-window" class="with-title">
+            <div id="output" class="with-title"></div>
+            <div id="actions" class="with-title"></div>
         </div>
-        <input type="text" id="username" placeholder="Username">
-        <input type="text" id="message" placeholder="Message">
-        <button id="send">Send</button>
+        <input type="text" id="username" placeholder="Username" class="title">
+        <input type="text" id="message" placeholder="Message" class="title">
+        <button id="send" class="nes-btn is-primary">Send</button>
 
 
         <script src="/socket.io/socket.io.js"></script>
